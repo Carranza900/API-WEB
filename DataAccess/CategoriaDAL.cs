@@ -8,7 +8,7 @@ namespace ProyectoIV.DataAccess
 {
     public class CategoriaDAL
     {
-        private string cadenaConexion = "Data Source=DESKTOP-DEL1U7K;Initial Catalog=Paletitas;Integrated Security=True;TrustServerCertificate=True;";
+        private string cadenaConexion = "Data Source=DESKTOP-;Initial Catalog=Paletitas;Integrated Security=True;TrustServerCertificate=True;";
 
 
         // Método para listar categorías
