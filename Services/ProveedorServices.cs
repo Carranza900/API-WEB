@@ -9,7 +9,6 @@ namespace Integrador.Services
     {
         private readonly ProveedorDAL proveedorDAL;
 
-        // Constructor que acepta la configuración y la pasa a ProveedorDAL
         public ProveedorService(IConfiguration configuration)
         {
             proveedorDAL = new ProveedorDAL(configuration);

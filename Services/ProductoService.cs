@@ -14,6 +14,10 @@ namespace ProyectoIV.Services
             _productoDAL = new ProductoDAL(configuration);
         }
 
+        public bool CategoriaExiste(int idCategoria)
+        {
+            return _productoDAL.ObtenerCategorias().Any(c => c.ID_Categoria == idCategoria);
+        }
         public List<Producto> ObtenerProductos()
         {
             return _productoDAL.ListarProductos();

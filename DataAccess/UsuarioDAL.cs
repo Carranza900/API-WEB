@@ -65,7 +65,7 @@ namespace ProyectoIV.DataAccess
                             ID_Usuario = reader.GetInt32(reader.GetOrdinal("ID_Usuario")),
                             Usuario = reader.GetString(reader.GetOrdinal("Usuario")),
                             Rol = reader.GetString(reader.GetOrdinal("Rol")),
-                            Estado = reader["Estado"].ToString() == "Activo"
+                            Estado = reader.GetBoolean(reader.GetOrdinal("Estado"))
                         };
                         listaUsuarios.Add(usuario);
                     }
@@ -74,6 +74,7 @@ namespace ProyectoIV.DataAccess
 
             return listaUsuarios;
         }
+
 
         // Método para insertar usuario
         public bool InsertarUsuario(Usuarios usuario)
@@ -87,12 +88,13 @@ namespace ProyectoIV.DataAccess
                 command.Parameters.AddWithValue("@Usuario", usuario.Usuario);
                 command.Parameters.AddWithValue("@Clave", usuario.Clave);
                 command.Parameters.AddWithValue("@Rol", usuario.Rol);
-                command.Parameters.AddWithValue("@Estado", usuario.Estado ? "Activo" : "Inactivo");
+                command.Parameters.AddWithValue("@Estado", usuario.Estado); // Estado booleano
 
                 int filasAfectadas = command.ExecuteNonQuery();
                 return filasAfectadas > 0;
             }
         }
+
 
         // Método para actualizar usuario
         public bool ActualizarUsuario(Usuarios usuario)
@@ -107,12 +109,13 @@ namespace ProyectoIV.DataAccess
                 command.Parameters.AddWithValue("@Usuario", usuario.Usuario);
                 command.Parameters.AddWithValue("@Clave", usuario.Clave);
                 command.Parameters.AddWithValue("@Rol", usuario.Rol);
-                command.Parameters.AddWithValue("@Estado", usuario.Estado ? "Activo" : "Inactivo");
+                command.Parameters.AddWithValue("@Estado", usuario.Estado); // Estado booleano
 
                 int filasAfectadas = command.ExecuteNonQuery();
                 return filasAfectadas > 0;
             }
         }
+
 
         // Método para eliminar usuario
         public bool EliminarUsuario(int idUsuario)

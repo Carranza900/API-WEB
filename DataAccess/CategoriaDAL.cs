@@ -10,7 +10,6 @@ namespace ProyectoIV.DataAccess
     {
         private readonly string _cadenaConexion;
 
-        // Constructor para obtener la cadena de conexión desde la configuración
         public CategoriaDAL(IConfiguration configuration)
         {
             _cadenaConexion = configuration.GetConnectionString("DefaultConnection");

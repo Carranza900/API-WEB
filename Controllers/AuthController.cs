@@ -17,14 +17,13 @@ namespace Integrador.Controllers
 
         public AuthController(UsuarioDAL usuarioDAL)
         {
-            _usuarioDAL = usuarioDAL; // Inyección 
+            _usuarioDAL = usuarioDAL;
         }
 
         // POST: api/auth/login
         [HttpPost("login")]
         public IActionResult Login([FromBody] UserLoginModel login)
         {
-            // Valida credenciales utilizando la base de datos
             var usuario = _usuarioDAL.ValidarUsuario(login.Usuario, login.Clave);
             if (usuario != null)
             {

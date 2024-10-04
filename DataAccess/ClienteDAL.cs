@@ -10,10 +10,8 @@ namespace Integrador.DataAccess
     {
         private readonly string cadenaConexion;
 
-        // Inyectar IConfiguration para obtener la cadena de conexión
         public ClienteDAL(IConfiguration configuration)
         {
-            // Obtener la cadena de conexión del archivo appsettings.json
             cadenaConexion = configuration.GetConnectionString("DefaultConnection");
         }
 

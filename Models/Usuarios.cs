@@ -7,5 +7,10 @@
         public string Clave { get; set; }
         public string Rol { get; set; }
         public bool Estado { get; set; }
+
+        public string EstadoString
+        {
+            get { return Estado ? "Activo" : "Inactivo"; }
+        }
     }
 }

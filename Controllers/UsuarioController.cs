@@ -16,18 +16,39 @@ public class UsuarioController : ControllerBase
 
     // GET: api/usuario
     [HttpGet]
-    [Authorize]  // Solo accesible si se proporciona un token JWT válido
-    public ActionResult<List<Usuarios>> GetUsuarios()
+    [Authorize]
+    public ActionResult<List<UsuarioDto>> GetUsuarios()
     {
         var usuarios = _usuarioService.ObtenerUsuarios();
-        return Ok(usuarios);
+
+        // Convertir la lista de Usuarios a UsuarioDto
+        var usuariosDto = usuarios.Select(u => new UsuarioDto
+        {
+            Usuario = u.Usuario,
+            Clave = u.Clave,
+            Rol = u.Rol,
+            Estado = u.Estado ? "Activo" : "Inactivo"
+        }).ToList();
+
+        return Ok(usuariosDto);
     }
 
     // POST: api/usuario
     [HttpPost]
-    [AllowAnonymous]  // Permitido sin autenticación, para registrar nuevos usuarios
-    public ActionResult<bool> PostUsuario(Usuarios usuario)
+    [AllowAnonymous]  // sin autenticación, para registrar nuevos usuarios
+    public ActionResult<bool> PostUsuario([FromBody] UsuarioDto usuarioDto)
     {
+        // Convertir el estado de string a bool
+        bool estadoBool = usuarioDto.Estado == "Activo";
+
+        var usuario = new Usuarios
+        {
+            Usuario = usuarioDto.Usuario,
+            Clave = usuarioDto.Clave,
+            Rol = usuarioDto.Rol,
+            Estado = estadoBool // Convertimos el estado a bool
+        };
+
         var result = _usuarioService.AgregarUsuario(usuario);
         return Ok(result);
     }
@@ -35,17 +56,29 @@ public class UsuarioController : ControllerBase
     // PUT: api/usuario/5
     [HttpPut("{id}")]
     [Authorize]  // Protegido con JWT
-    public IActionResult PutUsuario(int id, Usuarios usuario)
+    public IActionResult PutUsuario(int id, [FromBody] UsuarioDto usuarioDto)
     {
-        if (id != usuario.ID_Usuario)
+        if (id <= 0)
         {
-            return BadRequest();
+            return BadRequest("ID de usuario inválido.");
         }
+
+        // Convertir el estado de string a bool
+        bool estadoBool = usuarioDto.Estado == "Activo";
+
+        var usuario = new Usuarios
+        {
+            ID_Usuario = id,
+            Usuario = usuarioDto.Usuario,
+            Clave = usuarioDto.Clave,
+            Rol = usuarioDto.Rol,
+            Estado = estadoBool
+        };
 
         var result = _usuarioService.ActualizarUsuario(usuario);
         if (!result)
         {
-            return NotFound();
+            return NotFound("Usuario no encontrado.");
         }
 
         return NoContent();

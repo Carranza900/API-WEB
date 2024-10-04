@@ -10,7 +10,6 @@ namespace ProyectoIV.DataAccess
     {
         private readonly string _cadenaConexion;
 
-        // Constructor para obtener la cadena de conexión desde la configuración
         public ProductoDAL(IConfiguration configuration)
         {
             _cadenaConexion = configuration.GetConnectionString("DefaultConnection");
@@ -36,7 +35,7 @@ namespace ProyectoIV.DataAccess
                             ID_Producto = (int)reader["ID_Producto"],
                             Nombre = reader["NombreProducto"].ToString(),
                             Descripcion = reader["DescripcionProducto"].ToString(),
-                            Estado = (bool)reader["EstadoProducto"],
+                            EstadoTexto = reader["EstadoProductoTexto"].ToString(),
                             NombreCategoria = reader["NombreCategoria"].ToString()
                         };
                         listaProductos.Add(producto);
@@ -46,6 +45,7 @@ namespace ProyectoIV.DataAccess
 
             return listaProductos;
         }
+
 
         // Método para insertar producto
         public int InsertarProducto(Producto producto)
@@ -66,6 +66,7 @@ namespace ProyectoIV.DataAccess
             }
         }
 
+
         // Método para actualizar producto
         public bool ActualizarProducto(Producto producto)
         {
@@ -85,6 +86,34 @@ namespace ProyectoIV.DataAccess
                 return filasAfectadas > 0;
             }
         }
+
+        public List<Categoria> ObtenerCategorias()
+        {
+            List<Categoria> listaCategorias = new List<Categoria>();
+            using (SqlConnection connection = new SqlConnection(_cadenaConexion))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand("ListarCategorias", connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Categoria categoria = new Categoria
+                        {
+                            ID_Categoria = reader.GetInt32(reader.GetOrdinal("ID_Categoria")),
+                            Nombre = reader.GetString(reader.GetOrdinal("Nombre")),
+                            Descripcion = reader.GetString(reader.GetOrdinal("Descripcion")),
+                            Estado = reader["Estado"].ToString() == "Activo"
+                        };
+                        listaCategorias.Add(categoria);
+                    }
+                }
+            }
+            return listaCategorias;
+        }
+
 
         // Método para eliminar producto
         public bool EliminarProducto(int idProducto)

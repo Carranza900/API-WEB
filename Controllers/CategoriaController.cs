@@ -11,7 +11,6 @@ namespace ProyectoIV.Controllers
     {
         private readonly CategoriaService _categoriaService;
 
-        // Inyección de dependencias a través del constructor
         public CategoriaController(CategoriaService categoriaService)
         {
             _categoriaService = categoriaService;
@@ -27,25 +26,35 @@ namespace ProyectoIV.Controllers
 
         // POST: api/categoria
         [HttpPost]
-        public ActionResult<bool> PostCategoria(Categoria categoria)
+        public ActionResult<bool> PostCategoria([FromBody] Categoria categoria)
         {
+            if (categoria == null || string.IsNullOrEmpty(categoria.Nombre))
+            {
+                return BadRequest("La categoría no es válida.");
+            }
+
             var result = _categoriaService.AgregarCategoria(categoria);
-            return Ok(result);
+            if (!result)
+            {
+                return BadRequest("No se pudo agregar la categoría.");
+            }
+
+            return CreatedAtAction(nameof(GetCategorias), new { id = categoria.ID_Categoria }, categoria);
         }
 
         // PUT: api/categoria/5
         [HttpPut("{id}")]
-        public IActionResult PutCategoria(int id, Categoria categoria)
+        public IActionResult PutCategoria(int id, [FromBody] Categoria categoria)
         {
             if (id != categoria.ID_Categoria)
             {
-                return BadRequest();
+                return BadRequest("El ID de la categoría no coincide.");
             }
 
             var result = _categoriaService.ActualizarCategoria(categoria);
             if (!result)
             {
-                return NotFound();
+                return NotFound("Categoría no encontrada.");
             }
 
             return NoContent();
@@ -58,7 +67,7 @@ namespace ProyectoIV.Controllers
             var result = _categoriaService.EliminarCategoria(id);
             if (!result)
             {
-                return NotFound();
+                return NotFound("Categoría no encontrada.");
             }
 
             return NoContent();

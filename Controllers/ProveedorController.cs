@@ -12,7 +12,6 @@ namespace Integrador.Controllers
     {
         private readonly ProveedorService _proveedorService;
 
-        // Inyección de dependencias del servicio y configuración
         public ProveedorController(ProveedorService proveedorService)
         {
             _proveedorService = proveedorService;
