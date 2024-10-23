@@ -13,25 +13,6 @@ builder.Services.AddScoped<UsuarioDAL>();
 
 builder.Services.AddScoped<UsuarioService>();
 
-// Configurar autenticación JWT
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = "AuthService", // Emisor del token
-        ValidAudience = "MyApi", // Audiencia del token
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("S3gur1dad#2024!@#SecretSuperSegura12345")) 
-    };
-});
 
 // Swagger y otros middlewares
 builder.Services.AddEndpointsApiExplorer();
