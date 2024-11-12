@@ -1,0 +1,6 @@
+@SISWIN_HostAddress = http://localhost:5198
+
+GET {{SISWIN_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
