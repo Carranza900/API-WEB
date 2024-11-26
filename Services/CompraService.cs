@@ -35,5 +35,11 @@ namespace SISWIN.Services
 
                 return _compraDAL.Add(compra);
             }
+
+             public string UpdateCompra(Compra compra)
+             {
+                 return _compraDAL.UpdateCompra(compra);
+             }
+
     }
 }

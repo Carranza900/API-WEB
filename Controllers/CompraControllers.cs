@@ -45,5 +45,30 @@ namespace SISWIN.Controllers
             return Ok(factura);
         }
 
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateCompra(int id, [FromBody] Compra compra)
+        {
+            if (compra == null || compra.ID_Compra != id)
+            {
+                return BadRequest("Datos inválidos, intente de nuevo por favor .");
+            }
+
+            try
+            {
+                var result = _compraService.UpdateCompra(compra);
+
+                if (result.Contains("Error"))
+                {
+                    return StatusCode(500, new { mensaje = result });
+                }
+
+                return Ok(new { mensaje = result });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = $"Error al actualizar la compra: {ex.Message}" });
+            }
+        }
     }
 }
