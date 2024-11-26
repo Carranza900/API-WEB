@@ -1,0 +1,105 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Paletitas.Models;
+using Paletitas.Services;
+
+namespace Paletitas.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class VentaController : ControllerBase
+    {
+
+        private readonly VentaServices _ventasServices;
+
+        public VentaController(VentaServices ventaServices)
+        {
+            _ventasServices = ventaServices;
+        }
+
+        [HttpPost("Registrar Venta")]
+        public IActionResult Add([FromBody] Ventas venta)
+        {
+            if (venta == null)
+            {
+                return BadRequest("Datos no encontrados");
+            }
+
+            var resultado = _ventasServices.Add(venta);
+
+            if (resultado == null)
+            {
+                return BadRequest(new { message = "No se pudo realizar la venta debido a existencias insuficientes." });
+            }
+
+            return Ok("Venta registrada exitosamente.");
+        }
+
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var venta = _ventasServices.GetAll();
+            if (venta == null) { return NotFound(); }
+            return Ok(venta);
+        }
+
+
+        [HttpGet ("{id}")]
+        public IActionResult GetById(int id)
+        {
+            try
+            {
+                var venta = _ventasServices.GetById(id);
+
+                if (venta == null)
+                {
+                    return NotFound(new
+                    {
+                        message = $"No se encontró una venta con el ID {id}."
+                    });
+                }
+
+                return Ok(venta);
+            }
+          
+            catch (Exception ex)
+            {
+               
+                Console.WriteLine($"Error en el controlador: {ex.Message}");
+                return StatusCode(500, new { mensaje = $"Error al obtener la venta: {ex.Message}" });
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateVenta(int id, [FromBody] Ventas venta)
+        {
+            if (venta == null || venta.ID != id)
+            {
+                return BadRequest("Datos inválidos, intente de nuevo por favor .");
+            }
+
+            try
+            {
+                var result = _ventasServices.UpdateVenta(venta);
+
+                if (result.Contains("Error"))
+                {
+                    return StatusCode(500, new { mensaje = result });
+                }
+
+                return Ok(new { mensaje = result });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = $"Error al actualizar la venta: {ex.Message}" });
+            }
+        }
+
+    }
+
+ }
+    
+
+
+
+
+
