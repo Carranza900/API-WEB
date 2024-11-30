@@ -92,3 +92,4 @@ C:\Users\Usuario\OneDrive\Documentos\2024 UNI SEGUNDO SEMESTRE\PROGRAMACION WEB 
 C:\Users\Usuario\OneDrive\Documentos\2024 UNI SEGUNDO SEMESTRE\PROGRAMACION WEB I 2024\TRABAJO API DESCOMPRIMIDO\Paletitas\obj\Debug\net8.0\Paletitas.pdb
 C:\Users\Usuario\OneDrive\Documentos\2024 UNI SEGUNDO SEMESTRE\PROGRAMACION WEB I 2024\TRABAJO API DESCOMPRIMIDO\Paletitas\obj\Debug\net8.0\Paletitas.genruntimeconfig.cache
 C:\Users\Usuario\OneDrive\Documentos\2024 UNI SEGUNDO SEMESTRE\PROGRAMACION WEB I 2024\TRABAJO API DESCOMPRIMIDO\Paletitas\obj\Debug\net8.0\ref\Paletitas.dll
+C:\Users\Usuario\OneDrive\Documentos\2024 UNI SEGUNDO SEMESTRE\PROGRAMACION WEB I 2024\TRABAJO API DESCOMPRIMIDO\Paletitas\obj\Debug\net8.0\Paletitas.sourcelink.json

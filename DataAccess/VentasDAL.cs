@@ -14,9 +14,9 @@ namespace Paletitas.DataAccess
         {
             _connectionString = connectionString;
         }
-        public List<VentasDto> GetAll()
+        public List<VentasDtoRes> GetAll()
         {
-            var ventas = new List<VentasDto>();
+            var ventas = new List<VentasDtoRes>();
             using (var connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
@@ -27,9 +27,9 @@ namespace Paletitas.DataAccess
                     {
                         while (reader.Read())
                         {
-                            VentasDto ventasDto = new VentasDto
+                            VentasDtoRes ventasDto = new VentasDtoRes
                             {
-                                ID = (int)reader["ID_Venta"],
+                                IDVenta = (int)reader["ID_Venta"],
                                 Cliente = reader.GetString(reader.GetOrdinal("Cliente")),
                                 Usuario = reader.GetString(reader.GetOrdinal("Usuario")),
                                 NumFactura = reader["Num_Factura"].ToString(),
@@ -47,7 +47,7 @@ namespace Paletitas.DataAccess
                             while (reader.Read())
                             {
                                 int idVenta = reader.GetInt32(reader.GetOrdinal("Id_Venta"));
-                                var venta = ventas.FirstOrDefault(v => v.ID == idVenta);
+                                var venta = ventas.FirstOrDefault(v => v.IDVenta == idVenta);
 
                                 if (venta != null)
                                 {
@@ -69,7 +69,7 @@ namespace Paletitas.DataAccess
             return ventas;
         }
 
-        public Ventas Add(Ventas venta)
+        public VentasDtoSoli Add(VentasDtoSoli venta)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
@@ -128,12 +128,13 @@ namespace Paletitas.DataAccess
                         return null;
                     }
                 }
+                
             }
         }
 
-        public List<VentasDto> GetById(int id)
+        public List<VentasDtoRes> GetById(int id)
         {
-            List<VentasDto> venta = new List<VentasDto>();
+            List<VentasDtoRes> venta = new List<VentasDtoRes>();
             using (var connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
@@ -145,10 +146,10 @@ namespace Paletitas.DataAccess
                     {
                         if (reader.Read())
                         {
-                            var ventas = new VentasDto
+                            var ventas = new VentasDtoRes
                             {
 
-                                ID = (int)reader["ID_Venta"],
+                                IDVenta = (int)reader["ID_Venta"],
                                 Cliente = reader.GetString(reader.GetOrdinal("Cliente")),
                                 Usuario = reader.GetString(reader.GetOrdinal("Usuario")),
                                 NumFactura = reader["Num_Factura"].ToString(),
@@ -169,7 +170,7 @@ namespace Paletitas.DataAccess
 
                                 foreach (var ventas in venta)
                                 {
-                                    if (ventas.ID == idVenta)
+                                    if (ventas.IDVenta == idVenta)
                                     {
                                         var detalle = new DetalleVentaDto
                                         {
@@ -192,8 +193,7 @@ namespace Paletitas.DataAccess
             }
 
         }    
-
-        public string UpdateVenta(Ventas venta)
+        public string UpdateVenta(int id,VentasDtoSoli venta)
         {
             try
             {
@@ -204,7 +204,7 @@ namespace Paletitas.DataAccess
                     using (var command = new SqlCommand("sp_ActualizarVenta", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
-                        command.Parameters.AddWithValue("@IdVenta", venta.ID);
+                        command.Parameters.AddWithValue("@IdVenta", id);
                         command.Parameters.AddWithValue("@IdCliente", venta.IdCliente);
                         command.Parameters.AddWithValue("@IdUsuario", venta.IdUsuario);
                         command.Parameters.AddWithValue("@NumFac", venta.Num_Factura);

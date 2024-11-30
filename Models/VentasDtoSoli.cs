@@ -1,8 +1,7 @@
 ﻿namespace Paletitas.Models
 {
-    public class Ventas
+    public class VentasDtoSoli
     {
-        public int ID_Venta { get; set; }
         public int IdCliente { get; set; }
         public int IdUsuario { get; set; }
         public string Num_Factura { get; set; }
@@ -11,6 +10,7 @@
         public decimal IVA { get; set; }
         public decimal Total { get; set; }
 
-        public List<DetalleVenta> DetalleVenta { get; set; } = new List<DetalleVenta>();
+        public List<DetalleVentaSoli> DetalleVenta { get; set; } = new List<DetalleVentaSoli>();
+
     }
 }

@@ -1,8 +1,8 @@
 ﻿namespace Paletitas.Models
 {
-    public class VentasDto
+    public class VentasDtoRes
     {
-        public int ID { get; set; }
+        public int IDVenta{ get; set; }
         public string NumFactura { get; set; }
         public string Cliente { get; set; }
         public string Usuario { get; set; }

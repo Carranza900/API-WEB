@@ -17,7 +17,7 @@ namespace Paletitas.Controllers
         }
 
         [HttpPost("Registrar Venta")]
-        public IActionResult Add([FromBody] Ventas venta)
+        public IActionResult Add([FromBody] VentasDtoSoli venta)
         {
             if (venta == null)
             {
@@ -70,28 +70,21 @@ namespace Paletitas.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateVenta(int id, [FromBody] Ventas venta)
+        public IActionResult UpdateVenta(int id, [FromBody] VentasDtoSoli venta)
         {
-            if (venta == null || venta.ID != id)
+            if (venta == null || id<=0)
             {
                 return BadRequest("Datos inválidos, intente de nuevo por favor .");
             }
+            var result = _ventasServices.UpdateVenta(id, venta);
 
-            try
+            if (result==null)
             {
-                var result = _ventasServices.UpdateVenta(venta);
-
-                if (result.Contains("Error"))
-                {
-                    return StatusCode(500, new { mensaje = result });
-                }
-
-                return Ok(new { mensaje = result });
+              return NotFound(new { statusCode = 404, success = false, messages = new[] { "Venta no encontrada." } });
             }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { mensaje = $"Error al actualizar la venta: {ex.Message}" });
-            }
+            
+
+            return Ok(new { statusCode = 200, success = true, messages = new[] { "Venta y detalles actualizados correctamente." } });
         }
 
     }

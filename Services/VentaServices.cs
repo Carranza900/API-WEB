@@ -13,17 +13,17 @@ namespace Paletitas.Services
             _ventaDAL = new VentasDAL(connectionString);
         }
 
-        public Ventas Add(Ventas venta)
+        public VentasDtoSoli Add(VentasDtoSoli venta)
         {
             return _ventaDAL.Add(venta);
         }
 
-        public List<VentasDto> GetAll()
+        public List<VentasDtoRes> GetAll()
         {
             return _ventaDAL.GetAll();
         }
 
-        public List<VentasDto> GetById(int id)
+        public List<VentasDtoRes> GetById(int id)
         {
             var venta = _ventaDAL.GetById(id);
                 
@@ -35,9 +35,9 @@ namespace Paletitas.Services
             return venta;
             
         }
-        public string UpdateVenta(Ventas venta)
+        public string UpdateVenta(int id,VentasDtoSoli venta)
         {
-            return _ventaDAL.UpdateVenta(venta);
+            return _ventaDAL.UpdateVenta(id,venta);
         }
 
     }
