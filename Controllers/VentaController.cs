@@ -80,11 +80,11 @@ namespace Paletitas.Controllers
 
             if (result==null)
             {
-              return NotFound(new { statusCode = 404, success = false, messages = new[] { "Venta no encontrada." } });
+              return NotFound("Venta no encontrada." );
             }
             
+            return Ok();
 
-            return Ok(new { statusCode = 200, success = true, messages = new[] { "Venta y detalles actualizados correctamente." } });
         }
 
     }

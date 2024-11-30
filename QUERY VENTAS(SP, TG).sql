@@ -170,7 +170,7 @@ BEGIN
         Productos p ON dv.Id_Producto = p.ID_Producto
 END
 
---procedimiento para actualizar
+--procedimiento para actualizar la venta
 CREATE PROCEDURE sp_ActualizarVenta
     @IdVenta INT,
     @IdCliente INT,
@@ -216,11 +216,14 @@ BEGIN
             Total = @Total
         WHERE ID_Venta = @IdVenta;
 
+		  DELETE FROM DetalleVenta WHERE Id_Venta = @IdVenta;
+
+		   INSERT INTO DetalleVenta (Id_Venta, Id_Producto, Precio, Cantidad, Subtotal)
+        SELECT @IdVenta, Id_Producto, Precio, Cantidad, Subtotal FROM @Detalles;
 
         COMMIT TRANSACTION;
-
-        SELECT 'Venta y detalles actualizados exitosamente' AS Mensaje;
-    END TRY
+		SELECT 'Venta y detalles actualizados correctamente' AS Mensaje;
+           END TRY
     BEGIN CATCH
         ROLLBACK TRANSACTION;
         THROW;

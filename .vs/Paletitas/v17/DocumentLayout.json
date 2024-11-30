@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\dataaccess\\ventasdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:dataaccess\\ventasdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\dataaccess\\ventasdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:dataaccess\\ventasdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:models\\detalleventasoli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\models\\detalleproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:models\\detalleproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,23 +63,11 @@
       "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:dataaccess\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\services\\detalleventaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:services\\detalleventaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\models\\ubicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:models\\ubicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\dataaccess\\categoriadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:dataaccess\\categoriadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\dataaccess\\productodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|solutionrelative:dataaccess\\productodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B5784EE-CE82-48E7-B98E-799F4A88C107}|Paletitas.csproj|c:\\users\\usuario\\onedrive\\documentos\\2024 uni segundo semestre\\programacion web i 2024\\trabajo api descomprimido\\paletitas\\dataaccess\\proveedordal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -145,7 +129,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,6 +146,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VentasDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\VentasDAL.cs",
+              "RelativeDocumentMoniker": "DataAccess\\VentasDAL.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\VentasDAL.cs",
+              "RelativeToolTip": "DataAccess\\VentasDAL.cs",
+              "ViewState": "AQIAANgAAAAAAAAAAAAowOcAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T18:38:26.661Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -186,8 +183,7 @@
               "RelativeToolTip": "Controllers\\ClienteController.cs",
               "ViewState": "AQIAAEsAAAAAAAAAAAA7wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T18:19:52.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T18:19:52.924Z"
             },
             {
               "$type": "Document",
@@ -199,8 +195,7 @@
               "RelativeToolTip": "Controllers\\ProductoController.cs",
               "ViewState": "AQIAAEMAAAAAAAAAAAAkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T18:19:23.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T18:19:23.763Z"
             },
             {
               "$type": "Document",
@@ -212,8 +207,7 @@
               "RelativeToolTip": "Models\\DetalleVentaSoli.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T17:07:23.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T17:07:23.523Z"
             },
             {
               "$type": "Document",
@@ -225,12 +219,11 @@
               "RelativeToolTip": "Models\\VentasDtoSoli.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T17:06:31.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T17:06:31.754Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "UsuarioDAL.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\UsuarioDAL.cs",
               "RelativeDocumentMoniker": "DataAccess\\UsuarioDAL.cs",
@@ -242,56 +235,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DetalleVentaServices.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Services\\DetalleVentaServices.cs",
-              "RelativeDocumentMoniker": "Services\\DetalleVentaServices.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Services\\DetalleVentaServices.cs",
-              "RelativeToolTip": "Services\\DetalleVentaServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T18:27:45.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VentasDAL.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\VentasDAL.cs",
-              "RelativeDocumentMoniker": "DataAccess\\VentasDAL.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\VentasDAL.cs",
-              "RelativeToolTip": "DataAccess\\VentasDAL.cs",
-              "ViewState": "AQIAANsAAAAAAAAAAAAowNwAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T18:08:16.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DetalleVenta.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\DetalleVenta.cs",
-              "RelativeDocumentMoniker": "Models\\DetalleVenta.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\DetalleVenta.cs",
-              "RelativeToolTip": "Models\\DetalleVenta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T18:06:29.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Ubicacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\Ubicacion.cs",
-              "RelativeDocumentMoniker": "Models\\Ubicacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\Ubicacion.cs",
-              "RelativeToolTip": "Models\\Ubicacion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:45:04.37Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Ventas.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\Ventas.cs",
@@ -300,8 +243,7 @@
               "RelativeToolTip": "Models\\Ventas.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:44:33.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T17:44:33.486Z"
             },
             {
               "$type": "Document",
@@ -313,8 +255,7 @@
               "RelativeToolTip": "Controllers\\ProveedorController.cs",
               "ViewState": "AQIAAFQAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:39:33.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T15:39:33.517Z"
             },
             {
               "$type": "Document",
@@ -326,12 +267,11 @@
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:39:24.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T15:39:24.043Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 16,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -343,19 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ProductoDAL.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\ProductoDAL.cs",
-              "RelativeDocumentMoniker": "DataAccess\\ProductoDAL.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\ProductoDAL.cs",
-              "RelativeToolTip": "DataAccess\\ProductoDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T01:50:10.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 21,
               "Title": "UsuarioDTO.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\UsuarioDTO.cs",
               "RelativeDocumentMoniker": "Models\\UsuarioDTO.cs",
@@ -375,12 +303,11 @@
               "RelativeToolTip": "Models\\VentasDtoRes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T01:31:51.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T01:31:51.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -392,13 +319,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "VentaController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Controllers\\VentaController.cs",
               "RelativeDocumentMoniker": "Controllers\\VentaController.cs",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Controllers\\VentaController.cs",
               "RelativeToolTip": "Controllers\\VentaController.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAMwFYAAAB9AAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAWwFUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T21:48:18.436Z",
               "EditorCaption": ""
@@ -413,12 +340,11 @@
               "RelativeToolTip": "Services\\VentaServices.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAApwCQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T21:45:28.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T21:45:28.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
               "Title": "CategoriaDAL.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\CategoriaDAL.cs",
               "RelativeDocumentMoniker": "DataAccess\\CategoriaDAL.cs",
@@ -438,12 +364,11 @@
               "RelativeToolTip": "Controllers\\CategoriaController.cs",
               "ViewState": "AQIAAGYAAAAAAAAAAAAowDkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T21:30:05.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T21:30:05.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -455,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 24,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\Proveedor.cs",
               "RelativeDocumentMoniker": "Models\\Proveedor.cs",
@@ -467,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 25,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\Roles.cs",
               "RelativeDocumentMoniker": "Models\\Roles.cs",
@@ -479,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 22,
               "Title": "CategoriaServices.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Services\\CategoriaServices.cs",
               "RelativeDocumentMoniker": "Services\\CategoriaServices.cs",
@@ -491,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 20,
               "Title": "UsuarioServices.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Services\\UsuarioServices.cs",
               "RelativeDocumentMoniker": "Services\\UsuarioServices.cs",
@@ -503,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 23,
               "Title": "ClienteDAL.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\ClienteDAL.cs",
               "RelativeDocumentMoniker": "DataAccess\\ClienteDAL.cs",
@@ -515,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 26,
               "Title": "ProveedorServices.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Services\\ProveedorServices.cs",
               "RelativeDocumentMoniker": "Services\\ProveedorServices.cs",
@@ -527,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "ProveedorDAL.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\DataAccess\\ProveedorDAL.cs",
               "RelativeDocumentMoniker": "DataAccess\\ProveedorDAL.cs",
@@ -539,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 27,
               "Title": "PasswordHelper.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Services\\PasswordHelper.cs",
               "RelativeDocumentMoniker": "Services\\PasswordHelper.cs",
@@ -551,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 28,
               "Title": "Lote.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\Lote.cs",
               "RelativeDocumentMoniker": "Models\\Lote.cs",
@@ -563,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 29,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\JwtSettings.cs",
               "RelativeDocumentMoniker": "Models\\JwtSettings.cs",
@@ -575,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "DetalleProducto.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\2024 UNI SEGUNDO SEMESTRE\\PROGRAMACION WEB I 2024\\TRABAJO API DESCOMPRIMIDO\\Paletitas\\Models\\DetalleProducto.cs",
               "RelativeDocumentMoniker": "Models\\DetalleProducto.cs",
@@ -583,8 +508,7 @@
               "RelativeToolTip": "Models\\DetalleProducto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T21:24:34.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T21:24:34.371Z"
             }
           ]
         }
